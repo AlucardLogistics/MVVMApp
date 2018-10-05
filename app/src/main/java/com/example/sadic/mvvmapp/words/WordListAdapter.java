@@ -1,4 +1,4 @@
-package com.example.sadic.mvvmapp;
+package com.example.sadic.mvvmapp.words;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.sadic.mvvmapp.data.local.Word;
+import com.example.sadic.mvvmapp.R;
+
+import com.example.sadic.mvvmapp.data.source.local.Word;
 
 import java.util.List;
 
@@ -16,7 +18,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
     private final LayoutInflater mInflater;
     private List<Word> mWords; // Cached copy of words
 
-    WordListAdapter(Context context) {
+    public WordListAdapter(Context context) {
         mInflater = LayoutInflater.from(context);
     }
 

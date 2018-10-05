@@ -4,9 +4,10 @@ import android.app.Application;
 import android.arch.lifecycle.LiveData;
 import android.os.AsyncTask;
 
-import com.example.sadic.mvvmapp.data.local.Word;
-import com.example.sadic.mvvmapp.data.local.WordDao;
-import com.example.sadic.mvvmapp.data.local.WordRoomDatabase;
+
+import com.example.sadic.mvvmapp.data.source.local.Word;
+import com.example.sadic.mvvmapp.data.source.local.WordDao;
+import com.example.sadic.mvvmapp.data.source.local.WordRoomDatabase;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.sadic.mvvmapp.data.local;
+package com.example.sadic.mvvmapp.data.source.local;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;

@@ -5,7 +5,8 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 
 import com.example.sadic.mvvmapp.data.WordRepository;
-import com.example.sadic.mvvmapp.data.local.Word;
+
+import com.example.sadic.mvvmapp.data.source.local.Word;
 
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class WordViewModel extends AndroidViewModel {
         mAllWords = mRepository.getAllWords();
     }
 
-    LiveData<List<Word>> getAllWords() {
+    public LiveData<List<Word>> getAllWords() {
         return mAllWords;
     }
 

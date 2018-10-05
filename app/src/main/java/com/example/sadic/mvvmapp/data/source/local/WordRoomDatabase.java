@@ -1,4 +1,4 @@
-package com.example.sadic.mvvmapp.data.local;
+package com.example.sadic.mvvmapp.data.source.local;
 
 import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
@@ -7,6 +7,9 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
+
+import com.example.sadic.mvvmapp.data.source.local.Word;
+import com.example.sadic.mvvmapp.data.source.local.WordDao;
 
 //@Database(entities = { YourEntity.class }, version = 1, exportSchema = false)
 @Database(entities = {Word.class}, version = 1, exportSchema = false)
